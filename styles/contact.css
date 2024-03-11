@@ -6,27 +6,21 @@ body {
     font-size: 100%;
     color: #050404;
     background-color: #fff;
-
-    /* background: #ADA996;  
-    background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  
-    background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); 
-    */
-    
-
 }
 
-#grid-layout {
-    width: 100vw;
+/* Create one grid and put that sign in the middle of it */
+#container {
     height: 100vh;
+    width: 100vw;
     display: grid;
     grid-template-rows: auto 1fr;
     grid-template-columns: auto 1fr;
     grid-template-areas:
         "nav nav"
-        "main aside";
+        "main main";
 }
 
-/* Navigation Styles */
+/* Navigation styles */
 nav {
     grid-area: nav;
     margin-top: 1.25em;
@@ -62,24 +56,10 @@ li {
     margin-left: 3em;
 }
 
-/* Main Styles */
-main {
+#main {
     grid-area: main;
     align-self: center;
+    justify-self: center;
     font-size: 70px;
-    margin-left: 1em;
-}
-
-/* Aside Styles */
-aside {
-    grid-area: aside;
-    align-self: center;
-}
-
-/* Misc. styles */
-.playfair {
-    /* color: #ab4945; */
-    /* color: #db0a0a; */
     font-style: italic;
-    /* color: #c91e08; */
 }
