@@ -23,6 +23,7 @@ body {
 nav {
     grid-area: nav;
     margin-top: 1.25em;
+    font-size: 1.25em;     /* debateable */
 }
 
 nav ul {
